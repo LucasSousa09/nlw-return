@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Loading } from "../Loading";
 
-const signInUrl = `https://github.com/login/oauth/authorize?scope=user&client_id=376a9ae8ecd3d4e9605a`;
+const signInUrl = `https://github.com/login/oauth/authorize?scope=user&client_id=50fb1cc622800db57414`;
 
 interface LoginBoxProps {
     code: boolean
