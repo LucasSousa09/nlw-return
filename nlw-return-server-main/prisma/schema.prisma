@@ -1,0 +1,35 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model User {
+  id String @id @default(uuid())
+
+  github_id Int
+  name      String
+  login     String
+
+  @@map("user")
+}
+
+model Feedback {
+  id String @id @default(uuid())
+
+  type       String
+  comment    String
+  screenshot String?
+  likes      Int?
+
+  user_id String
+  @@map("feedbacks")
+}
+
+//MissionAccompleshed
