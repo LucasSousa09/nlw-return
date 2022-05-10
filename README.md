@@ -1,12 +1,12 @@
 # NLW Return - The feedget Widget
 
-## A oitava edição dessa semana maravilhosa que nos impulsiona para o próximo nível.
-
-Feedget o widget que te **ajuda a ajudar** os desenvolvedores a melhorarem seu site.
+**A oitava edição dessa semana maravilhosa que nos impulsiona para o próximo nível.**
 
 ## A Aplicação
 
 **A aplicação está disponível em https://nlw-return-tau-lilac.vercel.app/**
+
+Feedget o widget que te **ajuda a ajudar** os desenvolvedores a melhorarem seu site.
 
 Por meio dele você pode enviar mensagens aos desenvolvedores do produto reportando problemas, enviando idéias ou simplesmente mandando outras mensagens como agradecimentos à um app nota 10.
 
@@ -28,7 +28,7 @@ Por meio dele você pode enviar mensagens aos desenvolvedores do produto reporta
 
 ![image](https://github.com/LucasSousa09/nlw-return/blob/main/nlw-return-images/6.5-light-theme.png)
 
-- Um sistema de login simples para poder ver seus feedbacks e mandar feedback. *Obs: também possuí versão dark, para dar uma olhada acesse a pasta images/7-lp-dark.png*
+- Um sistema de login simples com github para poder ver seus feedbacks e mandar feedback. *Obs: também possuí versão dark, para dar uma olhada acesse a pasta images/7-lp-dark.png*
 
 ![image](https://github.com/LucasSousa09/nlw-return/blob/main/nlw-return-images/8-lp-light.png)
 
@@ -56,3 +56,12 @@ Por meio dele você pode enviar mensagens aos desenvolvedores do produto reporta
 - Envio de emails com SendGrid
 - Deployment com Railway e Vercel
 
+## Rodando a aplicação
+
+- Instale as dependências com npm install
+- Configure as variáveis ambiente conforme os arquivos ".env" e ".env.local"
+- Entre no arquivo "migration_lock.toml" na pasta "migrations" dentro da pasta "prisma" e mude o provider de "postgresql" para "sqlite"
+- Entre no arquivo "schema.prisma" dentro da pasta "prisma"  e troque o database provider de "postgresql" para "sqlite"
+- Faça a migração do banco de dados com "prisma migrate run dev" 
+- Rode o servidor dentro da pasta "nlw-return-server-main" com "npm run dev"
+- Rode o front-end dentro da pasta "nlw-return-web-main" com "npm run dev"
