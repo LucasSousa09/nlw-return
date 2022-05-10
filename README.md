@@ -59,7 +59,7 @@ Por meio dele você pode enviar mensagens aos desenvolvedores do produto reporta
 ## Rodando a aplicação
 
 - Instale as dependências com npm install
-- Configure as variáveis ambiente conforme os arquivos ".env" e ".env.local"
+- Configure as variáveis ambiente conforme os arquivos ".env.example" e ".env.local.example"
 - Entre no arquivo "migration_lock.toml" na pasta "migrations" dentro da pasta "prisma" e mude o provider de "postgresql" para "sqlite"
 - Entre no arquivo "schema.prisma" dentro da pasta "prisma"  e troque o database provider de "postgresql" para "sqlite"
 - Faça a migração do banco de dados com "prisma migrate run dev" 
