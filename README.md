@@ -4,7 +4,7 @@
 
 ## A Aplicação
 
-**A aplicação está disponível em https://nlw-return-tau-lilac.vercel.app/**
+**<del>A aplicação está disponível em https://nlw-return-tau-lilac.vercel.app/<del>**
 
 Feedget o widget que te **ajuda a ajudar** os desenvolvedores a melhorarem seu site.
 
